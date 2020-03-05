@@ -1,0 +1,93 @@
+{
+  "_from": "themeparks@5.1.34",
+  "_id": "themeparks@5.1.34",
+  "_inBundle": false,
+  "_integrity": "sha512-q4IJBbzHUHzHPyACrM0BjQx2vwbBWa8QCV1HEDkNp3h4o9kw+VHWeafNRpMzHtPtJ4h5Mc2ZWlvzqiJorQJ6MQ==",
+  "_location": "/themeparks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "themeparks@5.1.34",
+    "name": "themeparks",
+    "escapedName": "themeparks",
+    "rawSpec": "5.1.34",
+    "saveSpec": null,
+    "fetchSpec": "5.1.34"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/themeparks/-/themeparks-5.1.34.tgz",
+  "_shasum": "4d90f2395111c1f584140f31707f912e6ec0d75f",
+  "_spec": "themeparks@5.1.34",
+  "_where": "/Users/mchristopher/Projects/Personal/themeparks-api",
+  "author": {
+    "name": "Jamie Holding",
+    "email": "me@jamie.holdings"
+  },
+  "bugs": {
+    "url": "https://github.com/cubehouse/themeparks/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Jamie Holding",
+      "email": "me@jamie.holdings"
+    }
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cookie": "^0.3.1",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
+    "needle": "^2.1.0",
+    "random-useragent": "^0.3.1",
+    "socks-proxy-agent": "^3.0.1",
+    "sqlite3": "^4.0.8",
+    "uuid": "^3.1.0",
+    "xml2js": "^0.4.19",
+    "yauzl": "^2.10.0"
+  },
+  "deprecated": false,
+  "description": "Get Theme Park Wait Times and Opening Times",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.6.3",
+    "mocha": "^5.2.0",
+    "restify": "^8.4.0",
+    "trevor": "^2.3.0",
+    "tz-lookup": "^6.1.3"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=5"
+  },
+  "homepage": "https://github.com/cubehouse/themeparks",
+  "keywords": [
+    "themeparks",
+    "waittimes",
+    "queues",
+    "disney",
+    "universal"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "themeparks",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cubehouse/themeparks.git"
+  },
+  "scripts": {
+    "docs": "node dev/UpdateREADME.js && node_modules/.bin/jsdoc -c docs.conf.json -R README.md -t node_modules/ink-docstrap/template -r -d docs",
+    "lint": "eslint ./lib/**",
+    "test": "eslint ./lib/** && node_modules/.bin/mocha lib/test.js",
+    "testonline": "mocha --exit lib/testonline.js",
+    "travislocal": "trevor"
+  },
+  "version": "5.1.34"
+}

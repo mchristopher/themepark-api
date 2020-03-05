@@ -1,5 +1,5 @@
 const express = require('express')
-const Themeparks = require('themeparks')
+const Themeparks = require('./themeparks_local')
 const PORT = process.env.PORT || 5000
 
 const app = express()
